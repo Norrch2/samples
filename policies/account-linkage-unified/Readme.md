@@ -2,7 +2,7 @@
 
 With Azure AD B2C an account can have multiple identities, local (username and password) or social/enterprise identity (such as Facebook or AAD). For more information, see [User profile attributes](https://docs.microsoft.com/azure/active-directory-b2c/user-profile-attributes) This Azure AD B2C sample demonstrates how to link and unlink existing Azure AD B2C account to a social identity.
 
-With the link and unlink policy, we append and remove federated identities to the `Identities` collection. Whether it's a federated account, we add new `userIdentitie`, or a local account and we add the first `userIdentities` to the collection. So, an account may look like this one:
+With the link and unlink policy, we append and remove federated identities to the `Identities` collection. Whether it's a federated account, we add a new `userIdentity`, or a local account and we add the first `userIdentities` to the collection. So, an account may look like this one:
 ```JSON
 {
   "displayName": "John Smith",
